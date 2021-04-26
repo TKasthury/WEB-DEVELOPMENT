@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avunut</title>
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+     crossorigin="anonymous" />
+     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+</head>
+<body>
+        <!--NavBar-->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 class="logo">Genuine</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Sign up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--Show case--><section class="showcase">
+            <div class="container grid">
+                <div class="showcase-text">
+                    <h1>Find the Most Effective Product</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Aspernatur placeat officiis assumenda. Eaque consequatur adipisci
+                        molestias mollitia quasi natus optio, aliquid ut animi itaque fugia
+                        t praesentium impedit. Minima, facilis illum.</p>
+                        </div>
+
+                        <div class="showcase-form card">
+                            <h2>Sign up</h2>
+                            <form>
+                                <div class="form-control">
+                                    <input type="text" name="First Name" placeholder="First Name">
+                                </div>
+                                <div class="form-control">
+                                    <input type="text" name="Last Name" placeholder="Last Name">
+                                </div>
+                                <div class="form-control">
+                                    <input type="email" name="email" placeholder="E mail" required>
+                                </div>
+                                <input type="submit" value="sign up" class="btn btn-primary">
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+    <!--Stats-->
+        <section class="stats">
+            <div class="container">
+                <section class="languages">
+                    <div class="grid grid-3 text-center my-4">
+                        <div class="card">
+                        <img src="../images/NORDIC TALKS_1.png">
+                            <p class="text-secondary">Review</p>
+                        </div>
+                        <div class="card">
+                            <img src="../images/download (1)_auto_x2.jpg">
+                            <p class="text-secondary">Repairing</p>
+                        </div>
+                        <div class="card">
+                            <img src="../images/61fjz1V2BoL._AC_SX355_.jpg">
+                            <p class="text-secondary">Products</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <script>
+                window.sr = ScrollReveal();
+                sr.reveal('li', {
+                duration: 2000,
+                origin:'bottom'
+            });
+
+            window.sr = ScrollReveal();
+            sr.reveal('.logo', {
+            duration: 2000,
+            origin:'bottom'
+            });
+
+            window.sr = ScrollReveal();
+            sr.reveal('.card', {
+            duration: 2000,
+            origin:'bottom'
+            });
+
+            sr.reveal('.showcase-text', {
+            duration: 3000,
+            origin:'left',
+            distance:'300px'
+            });
+
+            sr.reveal('.showcase-form', {
+            duration: 1000,
+            origin:'right',
+            distance:'300px'
+            });
+        </script>
+
+        <script>
+            $(function() {
+            // Smooth Scrolling
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html, body').animate({
+                    scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+                }
+            });
+            });
+        </script> 
+
+    </body>
+</html> 
